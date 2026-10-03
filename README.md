@@ -6,12 +6,12 @@
 [![Versão](https://img.shields.io/badge/versão-[0.1.0]-blue)]()
 [![Licença](https://img.shields.io/badge/licença-[acadêmica]-lightgrey)]()
 
-**Instituição:** [Nome da instituição]  
-**Curso:** [Nome do curso]  
-**Disciplina:** [Nome da disciplina]  
-**Turma / Semestre:** [Ex.: 2026.2]  
-**Professor(a):** [Nome completo]  
-**Status do projeto:** [Protótipo / MVP / Em desenvolvimento / Concluído]
+**Instituição:** Centro Universitário de Brasília (CEUB)  
+**Curso:** Análise e Desenvolvimento de Sistemas (ADS)  
+**Disciplina:** Desenvolvimento Web 
+**Turma / Semestre:** 2026.2
+**Professor(a):** Felippe Pires Ferreira
+**Status do projeto:** Em desenvolvimento
 
 ---
 
