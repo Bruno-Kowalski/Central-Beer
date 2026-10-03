@@ -1,12 +1,22 @@
-# CentralBeer
+<p align="center">
+  <img src="images/logo.png" alt="Logo CentralBeer" width="220">
+</p>
 
-**Gestão de estoque, vendas e caixa para distribuidoras de bebidas.**
+<h1 align="center">CentralBeer</h1>
 
-![Status](https://img.shields.io/badge/status-planejamento-F5B82E)
-![Versão](https://img.shields.io/badge/versão-0.0.1-171717)
-![Python](https://img.shields.io/badge/Python-3.12-blue)
-![Django](https://img.shields.io/badge/Django-5.2_LTS-darkgreen)
-![Banco](https://img.shields.io/badge/banco-SQLite-blue)
+<p align="center">
+  <strong>Gestão de estoque, vendas e caixa para distribuidoras de bebidas.</strong>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/status-planejamento-F5B82E" alt="Status">
+  <img src="https://img.shields.io/badge/versão-0.0.1-171717" alt="Versão">
+  <img src="https://img.shields.io/badge/Python-3.12-blue" alt="Python">
+  <img src="https://img.shields.io/badge/Django-5.2_LTS-darkgreen" alt="Django">
+  <img src="https://img.shields.io/badge/banco-SQLite-blue" alt="Banco">
+</p>
+
+---
 
 **Instituição:** CEUB  
 **Curso:** Análise e Desenvolvimento de Sistemas  
@@ -16,6 +26,8 @@
 **Status do projeto:** Em planejamento — Fase 1: documentação e arquitetura  
 
 > As funcionalidades e decisões técnicas descritas representam o planejamento do projeto. A aplicação, os testes e os workflows serão implementados na Fase 2.
+
+---
 
 ---
 
