@@ -6,7 +6,7 @@
 **Instituição:** CEUB  
 **Curso:** Análise e Desenvolvimento de Sistemas  
 **Disciplina:** Desenvolvimento Web  
-**Turma / Semestre:** Turma A / 2026.2  
+**Turma / Semestre:** Turma A in Formar / 2026.2  
 **Professor(a):** Felippe Pires Ferreira  
 **Status do projeto:** Em planejamento — Fase 1: documentação e arquitetura  
 
