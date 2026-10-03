@@ -3,10 +3,10 @@
 ![Status](https://img.shields.io/badge/status-em_planejamento-yellow)
 ![Versão](https://img.shields.io/badge/versão-0.0.1-blue)
 
-**Instituição:** UniCEUB  
+**Instituição:** CEUB  
 **Curso:** Análise e Desenvolvimento de Sistemas  
 **Disciplina:** Desenvolvimento Web  
-**Turma / Semestre:** Turma a informar / 2026.2  
+**Turma / Semestre:** Turma A / 2026.2  
 **Professor(a):** Felippe Pires Ferreira  
 **Status do projeto:** Em planejamento — Fase 1: documentação e arquitetura  
 
