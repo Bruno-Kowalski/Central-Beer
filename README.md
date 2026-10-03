@@ -1,17 +1,14 @@
-# [Nome do Projeto]
+# Gestão Distribuidora
 
-> Substitua os trechos entre colchetes `[ ]` pelas informações reais do trabalho. Remova esta nota e as demais orientações em *itálico* antes da entrega.
+![Status](https://img.shields.io/badge/status-em_planejamento-yellow)
+![Versão](https://img.shields.io/badge/versão-0.0.1-blue)
 
-[![Status](https://img.shields.io/badge/status-[em_desenvolvimento]-yellow)]()
-[![Versão](https://img.shields.io/badge/versão-[0.1.0]-blue)]()
-[![Licença](https://img.shields.io/badge/licença-[acadêmica]-lightgrey)]()
-
-**Instituição:** Centro Universitário de Brasília (CEUB)  
-**Curso:** Análise e Desenvolvimento de Sistemas (ADS)  
-**Disciplina:** Desenvolvimento Web 
-**Turma / Semestre:** 2026.2
-**Professor(a):** Felippe Pires Ferreira
-**Status do projeto:** Em desenvolvimento
+**Instituição:** UniCEUB  
+**Curso:** Análise e Desenvolvimento de Sistemas  
+**Disciplina:** Desenvolvimento Web  
+**Turma / Semestre:** Turma a informar / 2026.2  
+**Professor(a):** Felippe Pires Ferreira  
+**Status do projeto:** Em planejamento — Fase 1: documentação e arquitetura  
 
 ---
 
@@ -37,119 +34,126 @@
 
 ## 1. Descrição do projeto
 
-*Apresente o contexto, o problema e a solução proposta. Use linguagem objetiva (dois a quatro parágrafos).*
+O Gestão Distribuidora é uma proposta de sistema web voltado ao controle de estoque, vendas e caixa de uma distribuidora de bebidas. O projeto parte da dificuldade do cliente em acompanhar as entradas e saídas de mercadorias e localizar os produtos com facilidade durante o atendimento.
 
-[Descreva o que o sistema faz, para quem ele se destina e qual problema ele resolve.]
+A solução pretende reunir o cadastro dos produtos, o registro das movimentações de estoque e a realização de vendas em um mesmo sistema. Ao finalizar uma venda, os produtos vendidos serão descontados automaticamente do estoque, e os pagamentos serão registrados para a conferência do caixa.
+
+O estoque será mantido em unidades, permitindo entradas e vendas por unidade ou caixa fechada. A conversão utilizará a quantidade de unidades por caixa informada no cadastro de cada produto. O sistema também contemplará abertura de caixa, retiradas, reforços de troco e fechamento com identificação de sobras ou faltas.
 
 ### Objetivos
 
-*Liste os objetivos gerais e específicos do projeto.*
-
-- **Objetivo geral:** [Ex.: desenvolver uma aplicação web para gerenciar reservas de laboratórios.]
+- **Objetivo geral:** desenvolver uma aplicação web para facilitar o controle de estoque, vendas e caixa de uma distribuidora de bebidas.
 - **Objetivos específicos:**
-  - [Ex.: permitir cadastro e autenticação de usuários.]
-  - [Ex.: registrar e consultar reservas por data e laboratório.]
-  - [Ex.: gerar relatórios de ocupação.]
+  - Centralizar o cadastro e a consulta de produtos.
+  - Registrar entradas e saídas de mercadorias.
+  - Converter quantidades informadas em caixas para unidades.
+  - Facilitar a busca de produtos durante a venda.
+  - Atualizar automaticamente o estoque após a finalização das vendas.
+  - Registrar pagamentos e permitir a conferência do caixa.
+  - Disponibilizar relatórios, uma API REST própria e uma integração externa útil ao usuário.
 
 ### Público-alvo
 
-- [Ex.: estudantes da instituição]
-- [Ex.: professores responsáveis pelos laboratórios]
-- [Ex.: equipe administrativa]
+- Proprietários e administradores de distribuidoras de bebidas.
+- Atendentes responsáveis pelas vendas e pela operação do caixa.
+- Funcionários responsáveis pelo recebimento e controle de mercadorias.
 
 ---
 
 ## 2. Funcionalidades
 
-*Liste as funções implementadas (ou previstas) no sistema. Marque o status de cada uma.*
-
 | Funcionalidade | Descrição | Status |
 | --- | --- | --- |
-| [Ex.: Autenticação] | [Ex.: login, logout e recuperação de senha] | [Implementada / Em andamento / Planejada] |
-| [Ex.: Cadastro de usuários] | [Ex.: criação e edição de perfis] | [Implementada / Em andamento / Planejada] |
-| [Ex.: Relatórios] | [Ex.: exportação em PDF] | [Implementada / Em andamento / Planejada] |
+| Autenticação | Identificação dos usuários para acesso ao sistema e às operações autorizadas. | Planejada |
+| Cadastro de produtos | Inclusão, consulta, alteração e exclusão conforme as restrições de histórico a definir. | Planejada |
+| Configuração de embalagens | Registro da quantidade de unidades por caixa no cadastro do produto. | Planejada |
+| Entrada de mercadorias | Registro de entradas por unidade ou caixa, com conversão para unidades. | Planejada |
+| Consulta de estoque | Visualização dos saldos dos produtos em unidades. | Planejada |
+| Busca de produtos | Localização de produtos para consulta e atendimento no caixa. | Planejada |
+| Registro de vendas | Inclusão de produtos vendidos por unidade ou caixa fechada. | Planejada |
+| Baixa automática | Atualização do estoque após a finalização da venda. | Planejada |
+| Registro de pagamentos | Registro de dinheiro, PIX, débito e crédito, com até duas formas por venda. | Planejada |
+| Abertura de caixa | Registro do valor inicial para troco, com somente um caixa aberto por vez. | Planejada |
+| Movimentações de caixa | Registro de retiradas e reforços de dinheiro durante a operação. | Planejada |
+| Fechamento de caixa | Comparação entre valores esperados e conferidos, apresentando sobra ou falta. | Planejada |
+| Cancelamento de vendas | Cancelamento mediante autorização com senha do administrador. | Planejada |
+| Relatórios | Consulta de informações consolidadas, com filtros e opção de exportação ou impressão a definir. | Planejada |
+| API REST própria | Disponibilização de dados selecionados em JSON, com documentação e controle de acesso. | Planejada |
+| Integração externa | Consulta de informações de produtos por código de barras para auxiliar o cadastro; serviço ainda em avaliação. | Planejada |
 
 ### Requisitos não funcionais
 
-*Informe restrições de qualidade, quando existirem.*
-
-- **Desempenho:** [Ex.: respostas da API em menos de 2 segundos]
-- **Segurança:** [Ex.: senhas armazenadas com hash; HTTPS em produção]
-- **Usabilidade:** [Ex.: interface responsiva para desktop e celular]
-- **Disponibilidade:** [Ex.: uso em ambiente local / laboratório da disciplina]
+- **Desempenho:** metas de tempo de resposta e volume de dados a definir.
+- **Segurança:** validação de dados no servidor, controle de acesso, proteção das senhas e configurações sensíveis por variáveis de ambiente.
+- **Usabilidade:** interface responsiva, com identificação clara dos produtos, quantidades, valores e mensagens das operações.
+- **Disponibilidade:** publicação com HTTPS durante o período de avaliação; hospedagem ainda a definir, com armazenamento persistente para o SQLite.
 
 ---
 
 ## 3. Demonstração
 
-*Inclua capturas de tela, GIF ou link para vídeo. Coloque as imagens em `images/`.*
-
-![Tela principal](images/[screenshot-principal].png)
+Os protótipos ainda serão elaborados. As capturas de tela da documentação geral serão armazenadas em `images/` quando estiverem disponíveis.
 
 | Tela | Descrição |
 | --- | --- |
-| [Login] | [Acesso ao sistema com e-mail e senha] |
-| [Painel] | [Visão geral das reservas do dia] |
+| A definir | As telas essenciais serão detalhadas durante a elaboração dos protótipos da Fase 1. |
 
-**Vídeo / protótipo:** [URL do YouTube, Loom ou Figma]
+**Vídeo / protótipo:** ainda não disponível.
 
 ---
 
 ## 4. Tecnologias utilizadas
 
-*Informe as tecnologias de fato usadas no projeto. Remova as linhas que não se aplicarem.*
+O projeto está na fase de documentação. Python, Django e SQLite estão definidos para a implementação; as demais escolhas técnicas permanecem em avaliação.
 
 | Camada | Tecnologia | Versão |
 | --- | --- | --- |
-| Linguagem | [Ex.: Python, Java, TypeScript] | [Ex.: 3.12] |
-| Frontend | [Ex.: HTML, CSS, React] | [Ex.: 18] |
-| Backend | [Ex.: Flask, Spring Boot, Node.js] | [Ex.: 3.x] |
-| Banco de dados | [Ex.: PostgreSQL, SQLite, MongoDB] | [Ex.: 16] |
-| Testes | [Ex.: pytest, JUnit, Jest] | [Ex.: 8] |
-| Infraestrutura | [Ex.: Docker, GitHub Actions] | — |
-| Outras ferramentas | [Ex.: Git, Figma, Postman] | — |
+| Linguagem | Python | A definir |
+| Frontend | A definir | A definir |
+| Backend | Django | A definir |
+| Banco de dados | SQLite | A definir |
+| Testes | A definir | A definir |
+| Infraestrutura | Hospedagem a definir | — |
+| Outras ferramentas | Git e GitHub | — |
 
 ---
 
 ## 5. Arquitetura
 
-*Explique como o sistema está organizado: camadas, principais componentes e o fluxo entre eles. Inclua um diagrama no PDF de arquitetura ou de classes em `docs/` e descreva-o em texto.*
+A arquitetura será documentada durante a Fase 1, incluindo a organização dos componentes, suas responsabilidades, a integração externa e o fluxo de dados.
 
-[Ex.: a solução segue uma arquitetura em camadas (apresentação, aplicação, domínio e persistência). O frontend consome uma API REST. O backend aplica as regras de negócio e persiste os dados no banco.]
+O backend será desenvolvido em Python e Django, com persistência em SQLite. A tecnologia da interface e a organização interna da aplicação ainda serão definidas pelo grupo.
 
-```text
-[Usuário] → [Interface / Frontend] → [API / Backend] → [Banco de dados]
-```
+Os diagramas e suas explicações serão armazenados em `docs/`, acompanhados dos arquivos-fonte editáveis e das versões exportadas para consulta.
 
 **Decisões relevantes:**
 
-- [Ex.: uso de API REST para separar cliente e servidor.]
-- [Ex.: persistência relacional porque os dados possuem relacionamentos bem definidos.]
+- Uso de Python e Django no backend, conforme a exigência da atividade.
+- Uso de SQLite como banco de dados relacional.
+- Controle do estoque em unidades, com conversão de caixas conforme o cadastro do produto.
+- Registro dos pagamentos confirmados pelo atendente, com maquininha e aplicativo bancário operando separadamente.
+- Disponibilização de API REST própria e consumo de serviço externo, conforme os requisitos do trabalho.
 
 ### Endpoints principais (quando houver API)
 
 | Método | Rota | Descrição |
 | --- | --- | --- |
-| `POST` | `/api/[recurso]` | [Ex.: criar um registro] |
-| `GET` | `/api/[recurso]` | [Ex.: listar registros] |
-| `GET` | `/api/[recurso]/{id}` | [Ex.: obter um registro] |
-| `PUT` | `/api/[recurso]/{id}` | [Ex.: atualizar um registro] |
-| `DELETE` | `/api/[recurso]/{id}` | [Ex.: remover um registro] |
+| A definir | A definir | Os endpoints serão especificados no contrato inicial da API durante a Fase 1. |
 
-Documentação completa da API: [link para Swagger, Postman ou `docs/api.md`]
+Documentação completa da API: ainda não disponível.
+
+A API externa para consulta de produtos por código de barras ainda está em avaliação. Sua escolha dependerá da cobertura dos produtos, documentação, condições de uso e tratamento de falhas.
 
 ---
 
 ## 6. Organização dos diretórios
 
-*Mantenha a árvore alinhada à estrutura real do repositório. Ajuste pastas conforme o tipo de projeto.*
+Estrutura atual do repositório:
 
 ```text
 .
-├── README.md                 # Documentação principal do projeto
-├── .env.example              # Modelo de variáveis de ambiente (sem segredos)
-├── docs/                     # Modelagem e demais artefatos técnicos (PDF)
-│   ├── README.pdf            # Índice da pasta docs/
+├── README.md
+├── docs/
 │   └── modelagem/
 │       ├── casos-de-uso/
 │       │   └── especificacoes-casos-de-uso.pdf
@@ -158,110 +162,95 @@ Documentação completa da API: [link para Swagger, Postman ou `docs/api.md`]
 │       └── banco-de-dados/
 │           ├── diagrama-er.pdf
 │           └── modelo-logico.pdf
-├── images/                   # Figuras da documentação geral (ex.: política de IA)
-├── src/                      # Código-fonte da aplicação
-│   ├── frontend/             # Interface com o usuário (quando houver)
-│   └── backend/              # Regras de negócio, API e acesso a dados (quando houver)
-├── tests/                    # Testes automatizados
-└── scripts/                  # Scripts auxiliares de setup, build ou deploy
+└── images/
+    └── semaforo.png
 ```
 
 | Diretório / arquivo | Função |
 | --- | --- |
-| `README.md` | Apresentação do projeto, objetivos, tecnologias e instruções de uso |
-| `.env.example` | Lista das variáveis necessárias, sem credenciais reais |
-| `docs/` | Artefatos de análise e modelagem em PDF |
-| `docs/modelagem/` | Casos de uso, classes e modelo de dados (diagramas embutidos nos PDFs) |
-| `images/` | Figuras da documentação geral do repositório (não usar para diagramas de modelagem) |
-| `src/` | Código-fonte organizado por camada ou módulo |
-| `tests/` | Casos de teste e evidências de verificação |
-| `scripts/` | Automação de ambiente e execução |
+| `README.md` | Apresentação do projeto, objetivos, tecnologias, situação atual e orientações de uso. |
+| `docs/` | Documentação técnica do projeto. |
+| `docs/modelagem/` | Arquivos de casos de uso, classes e modelo de dados herdados do template. |
+| `images/` | Figuras da documentação geral do repositório. |
+| `images/semaforo.png` | Imagem da política de uso de IA disponibilizada no template. |
+
+Os PDFs atuais foram recebidos com o template e ainda não representam a modelagem específica do Gestão Distribuidora. As pastas de código, testes e configuração serão adicionadas durante o desenvolvimento.
 
 ---
 
 ## 7. Participantes
 
-*Informe nome completo, função no grupo e, se houver, o identificador acadêmico (matrícula).*
-
 | Nome | Matrícula | Função no projeto |
 | --- | --- | --- |
-| [Nome completo] | [000000] | [Ex.: coordenação / backend / frontend / testes / documentação] |
-| [Nome completo] | [000000] | [Ex.: backend] |
-| [Nome completo] | [000000] | [Ex.: frontend] |
-| [Nome completo] | [000000] | [Ex.: testes e documentação] |
+| Bruno dos Santos | A informar | A definir pelo grupo |
+| Carlos Emanuel | A informar | A definir pelo grupo |
+| Gustavo Augusto | A informar | A definir pelo grupo |
 
-**Professor(a) responsável:** [Nome completo]
+**Professor(a) responsável:** Felippe Pires Ferreira.
 
 ---
 
 ## 8. Como executar
 
-*Preencha com os comandos reais do projeto para que outra pessoa consiga reproduzir o ambiente.*
-
 ### Pré-requisitos
 
-- [Ex.: Git]
-- [Ex.: Python 3.12+]
-- [Ex.: Node.js 20+]
-- [Ex.: Docker]
+Para obter a documentação atual:
+
+- Git.
+
+Para executar a futura aplicação:
+
+- Python, em versão a definir.
+- Dependências do projeto, que serão registradas durante a implementação.
 
 ### Instalação e execução
 
+O projeto ainda não possui uma aplicação executável. Para obter uma cópia do repositório:
+
 ```bash
-# 1. Clonar o repositório
-git clone [URL_DO_REPOSITORIO]
-cd [NOME_DA_PASTA]
-
-# 2. Instalar dependências
-[comando de instalação]
-
-# 3. Configurar variáveis de ambiente
-cp .env.example .env
-# edite o arquivo .env com as credenciais locais
-
-# 4. Executar a aplicação
-[comando de execução]
+git clone https://github.com/Bruno-Kowalski/gestao-distribuidora.git
+cd gestao-distribuidora
 ```
 
-**Acesso local:** [Ex.: http://localhost:3000]
+As instruções de instalação das dependências, configuração do ambiente, execução das migrations e inicialização do Django serão adicionadas após a implementação.
+
+**Acesso local:** ainda não disponível.
 
 ### Implantação (quando houver)
 
-- **Ambiente:** [Ex.: Render, Railway, Vercel, servidor da instituição]
-- **URL de produção:** [https://...]
-- **Observações:** [Ex.: é necessário configurar as variáveis de ambiente no painel do provedor]
+- **Ambiente:** a definir.
+- **URL de produção:** ainda não disponível.
+- **Observações:** a hospedagem deverá oferecer HTTPS e armazenamento persistente para o arquivo do banco SQLite.
 
 ---
 
 ## 9. Configuração
 
-*Liste as variáveis de ambiente usadas pelo sistema. Nunca publique senhas, tokens ou chaves neste arquivo.*
+As variáveis de ambiente ainda serão definidas durante a configuração do projeto Django.
 
 | Variável | Obrigatória | Descrição | Exemplo |
 | --- | --- | --- | --- |
-| `PORT` | Sim | Porta da aplicação | `3000` |
-| `DATABASE_URL` | Sim | Conexão com o banco | `postgresql://user:senha@localhost:5432/app` |
-| `SECRET_KEY` | Sim | Chave de sessão / JWT | `[gerar localmente]` |
+| A definir | A definir | As configurações serão documentadas após a implementação. | — |
 
-Credenciais reais devem ficar apenas no arquivo `.env` (não versionado).
+O banco SQLite será criado pelas migrations do Django. O arquivo do banco local não será versionado no GitHub.
+
+Credenciais reais deverão permanecer fora do repositório. Quando necessário, será disponibilizado um `.env.example` com os nomes das variáveis e exemplos sem segredos.
 
 ---
 
 ## 10. Testes
 
-*Descreva como executar os testes e o que eles cobrem.*
-
-```bash
-[comando para executar os testes]
-```
+Os testes ainda não foram implementados. Os comandos de execução serão adicionados junto ao código da aplicação.
 
 | Tipo | Ferramenta | O que verifica |
 | --- | --- | --- |
-| Unitários | [Ex.: pytest / JUnit / Jest] | [Ex.: regras de negócio isoladas] |
-| Integração | [Ex.: ...] | [Ex.: API e banco de dados] |
-| Manuais | [Ex.: checklist em `docs/`] | [Ex.: fluxos principais da interface] |
+| Unitários | A definir | Cálculos e regras isoladas, incluindo conversão de caixas e valores das vendas. |
+| Integração | A definir | Relação entre vendas, estoque, caixa, API e banco de dados. |
+| Manuais | Roteiro a elaborar | Fluxos principais de cadastro, entrada, venda, cancelamento e fechamento. |
 
-**Cobertura atual:** [Ex.: 70% / não medida]
+**Cobertura atual:** não medida; implementação não iniciada.
+
+Na Fase 2, também serão realizadas análises SAST e DAST, com registro das ferramentas, resultados, correções e verificações posteriores. O DAST será executado somente contra ambiente autorizado do grupo.
 
 ---
 
@@ -273,60 +262,59 @@ Este repositório segue a política de uso de IA da disciplina (semáforo pedag�
 
 | Situação | Significado |
 | --- | --- |
-| **Vermelho — uso proibido** | Atividades de autonomia intelectual (ex.: provas presenciais sem consulta). |
+| **Vermelho — uso proibido** | Atividades de autonomia intelectual, como provas presenciais sem consulta. |
 | **Amarelo — uso limitado** | IA pode ser ferramenta auxiliar, desde que haja declaração de uso. |
 | **Verde — uso permitido** | Uso livre ao longo da atividade acadêmica. |
 
 ### Declaração de uso
 
-*Preencha de forma honesta. Se não houve uso de IA, declare explicitamente.*
+- **Houve uso de IA neste projeto?** Sim.
+- **Ferramentas utilizadas:** ChatGPT.
+- **Finalidade:** esclarecimento do enunciado, discussão de possibilidades, orientação sobre GitHub e geração deste rascunho de README com base nas informações fornecidas por Bruno dos Santos.
+- **O que NÃO foi delegado à IA:** relato da dificuldade do cliente e confirmação das decisões operacionais pelo aluno. Arquitetura detalhada, modelagem e implementação ainda não foram concluídas.
 
-- **Houve uso de IA neste projeto?** [Sim / Não]
-- **Ferramentas utilizadas:** [Ex.: ChatGPT, GitHub Copilot, Gemini — ou “nenhuma”]
-- **Finalidade:** [Ex.: revisão de texto, geração de esboço de testes, esclarecimento de dúvidas de sintaxe]
-- **O que NÃO foi delegado à IA:** [Ex.: definição do problema, modelagem, implementação das regras de negócio, testes finais]
+A especificação da atividade contém restrições ao uso de IA na elaboração dos documentos. Este README é um rascunho gerado com IA; sua utilização na entrega deverá ser validada com o professor.
 
 ---
 
 ## 12. Contribuição e fluxo de trabalho
 
-*Padronize o trabalho em equipe. Ajuste as regras ao combinado da disciplina.*
-
 ### Branches
 
-- `main` — versão estável para avaliação
-- `develop` — integração do grupo *(opcional)*
-- `feat/[nome]` — nova funcionalidade
-- `fix/[nome]` — correção de defeito
-- `docs/[nome]` — alterações só de documentação
+- `main` — versão estável para avaliação.
+- `develop` — integração do grupo, caso seja adotada.
+- `feat/[nome]` — nova funcionalidade.
+- `fix/[nome]` — correção de defeito.
+- `docs/[nome]` — alterações de documentação.
 
 ### Commits
 
-Use mensagens curtas e no imperativo, por exemplo:
+Utilizar mensagens curtas e claras, por exemplo:
 
-- `feat: adiciona cadastro de reservas`
-- `fix: corrige validação de data`
-- `docs: atualiza instruções de execução`
+- `feat: adiciona cadastro de produtos`
+- `fix: corrige conversão de caixas`
+- `docs: atualiza apresentação do projeto`
 
 ### Passos sugeridos
 
 1. Criar uma branch a partir de `main`.
-2. Implementar e testar localmente.
-3. Abrir um *pull request* / *merge request* para revisão do grupo.
-4. Só então integrar à branch principal.
+2. Implementar e verificar as alterações localmente.
+3. Abrir um pull request para revisão do grupo.
+4. Integrar as alterações à branch principal após a revisão.
 
-**Issues e quadro de tarefas:** [link do GitHub Projects, Trello ou similar]
+Cada integrante deverá utilizar sua própria conta, mantendo contribuições identificáveis no histórico.
+
+**Issues e quadro de tarefas:** ferramenta e organização a definir pelo grupo.
 
 ---
 
 ## 13. Histórico de versões
 
-*Registre entregas relevantes (sprints, checkpoints ou versões avaliadas).*
-
 | Versão | Data | Descrição |
 | --- | --- | --- |
-| `0.1.0` | [AAAA-MM-DD] | [Ex.: primeira versão executável / MVP] |
-| `0.0.1` | [AAAA-MM-DD] | [Ex.: estrutura inicial do repositório] |
+| `0.0.1` | 2026-10-03 | Criação do repositório com a estrutura inicial disponibilizada pelo professor. |
+
+A entrega da documentação da Fase 1 está prevista para **05/10/2026**. O commit ou a tag correspondente será registrado após a conclusão e revisão dos materiais.
 
 ---
 
@@ -334,39 +322,59 @@ Use mensagens curtas e no imperativo, por exemplo:
 
 ### Problemas conhecidos
 
-- [Ex.: a recuperação de senha ainda não envia e-mail]
-- [Ex.: o layout quebra em telas menores que 360 px]
+- A aplicação ainda não foi implementada.
+- Os PDFs herdados do template ainda não representam a modelagem do projeto.
+- A API externa ainda não foi escolhida ou validada.
+- A identidade visual, os protótipos e a arquitetura detalhada estão pendentes.
+- As condições de cancelamento e seus efeitos no estoque e nos pagamentos precisam ser detalhados.
+- A emissão fiscal e a integração com a SEFAZ não fazem parte do escopo inicial.
+- Os pagamentos serão registrados manualmente após confirmação do atendente, sem integração bancária ou com maquininha.
 
 ### Roadmap
 
-- [ ] [Ex.: autenticação com dois fatores]
-- [ ] [Ex.: exportação de relatórios em CSV]
-- [ ] [Ex.: implantação em ambiente de homologação]
+- [ ] Confirmar os colaboradores e distribuir as responsabilidades.
+- [ ] Elaborar o Documento de Visão.
+- [ ] Elaborar os casos de uso e suas especificações.
+- [ ] Documentar a arquitetura.
+- [ ] Elaborar os modelos de dados.
+- [ ] Definir o contrato inicial da API REST.
+- [ ] Validar e selecionar a API externa.
+- [ ] Definir nome definitivo e identidade visual.
+- [ ] Elaborar os protótipos das telas essenciais.
+- [ ] Registrar backlog, responsáveis, marcos e riscos.
+- [ ] Revisar a correspondência entre os documentos.
+- [ ] Registrar a entrega da Fase 1.
+- [ ] Implementar, testar e publicar a aplicação na Fase 2.
+- [ ] Executar e documentar as análises SAST e DAST.
 
 ---
 
 ## 15. Licença, referências e contato
 
-**Licença:** [Ex.: uso exclusivamente acadêmico / MIT / outro]
+**Licença:** a definir pelo grupo, respeitando as condições dos materiais de terceiros utilizados.
 
-Este material destina-se a fins educacionais. Verifique com a disciplina se o código pode ser reutilizado fora do curso.
+Este material destina-se a fins educacionais. A disponibilidade pública do repositório não representa, por si só, autorização irrestrita de reutilização.
 
 ### Documentação complementar
 
-- Índice da pasta `docs/`: [`docs/README.pdf`](docs/README.pdf)
-- Casos de uso (diagrama + especificações): [`docs/modelagem/casos-de-uso/especificacoes-casos-de-uso.pdf`](docs/modelagem/casos-de-uso/especificacoes-casos-de-uso.pdf)
+Os arquivos abaixo foram herdados do template e ainda não constituem a documentação específica da distribuidora:
+
+- Casos de uso: [`docs/modelagem/casos-de-uso/especificacoes-casos-de-uso.pdf`](docs/modelagem/casos-de-uso/especificacoes-casos-de-uso.pdf)
 - Diagrama de classes: [`docs/modelagem/classes/diagrama-de-classes.pdf`](docs/modelagem/classes/diagrama-de-classes.pdf)
-- Modelo conceitual (ER): [`docs/modelagem/banco-de-dados/diagrama-er.pdf`](docs/modelagem/banco-de-dados/diagrama-er.pdf)
+- Modelo conceitual: [`docs/modelagem/banco-de-dados/diagrama-er.pdf`](docs/modelagem/banco-de-dados/diagrama-er.pdf)
 - Modelo lógico: [`docs/modelagem/banco-de-dados/modelo-logico.pdf`](docs/modelagem/banco-de-dados/modelo-logico.pdf)
-- Apresentação: [`docs/apresentacao.pdf`](docs/)
+
+O índice da documentação e a apresentação serão incluídos quando forem elaborados.
 
 ### Referências
 
-- [Autor. Título. Ano. URL ou dados bibliográficos.]
-- [Documentação oficial da tecnologia X.]
+- Ferreira, Felippe Pires. Especificação do trabalho prático de Desenvolvimento Web com Python e Django. Material disponibilizado na disciplina.
+- [Template disponibilizado pelo professor](https://github.com/Felippe-Pires/template_projects)
+
+O repositório foi criado por meio de fork do material indicado, pois a opção “Use this template” não estava disponível. A aceitação desse procedimento para a entrega deverá ser confirmada com o professor.
 
 ### Contato
 
-Dúvidas sobre o projeto: [e-mail institucional do grupo ou issue no repositório]
+Dúvidas sobre o projeto: entrar em contato com os integrantes do grupo.
 
-**Agradecimentos:** [Ex.: professor(a), monitoria, materiais da disciplina]
+**Agradecimentos:** ao professor Felippe Pires Ferreira pelas orientações e pelo material disponibilizado para a atividade.
