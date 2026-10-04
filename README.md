@@ -425,8 +425,8 @@ Cada desenvolvedor será responsável pelos testes dos módulos em que atuar. Mo
 Na Fase 1, o repositório pode ser obtido com:
 
 ```bash
-git clone https://github.com/Bruno-Kowalski/gestao-distribuidora.git
-cd gestao-distribuidora
+git clone https://github.com/Bruno-Kowalski/Central-Beer.git
+cd Central-Beer
 ```
 
 O procedimento abaixo será utilizado após a implementação da aplicação na Fase 2. Ainda não é executável sobre o repositório apenas documental.
