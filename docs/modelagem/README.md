@@ -2,6 +2,12 @@
 
 Esta pasta reúne os artefatos de modelagem do projeto CentralBeer.
 
+## Arquitetura
+
+- [Documento de Arquitetura - CentralBeer](https://github.com/Bruno-Kowalski/Central-Beer/blob/main/docs/modelagem/arquitetura/Documento%20de%20Arquitetura%20-%20CentralBeer.pdf)
+- [Diagrama UML de Componentes](https://github.com/Bruno-Kowalski/Central-Beer/blob/main/docs/modelagem/arquitetura/diagrama%20UML%20de%20Componentes.pdf)
+- [Arquivo editável do Diagrama UML de Componentes](https://github.com/Bruno-Kowalski/Central-Beer/blob/main/docs/modelagem/arquitetura/diagrama%20UML%20de%20Componentes.drawio)
+
 ## Banco de Dados
 
 - [Modelo de Dados - CentralBeer](https://github.com/Bruno-Kowalski/Central-Beer/blob/main/docs/modelagem/banco-de-dados/Modelo%20de%20Dados%20-%20CentralBeer.pdf)
