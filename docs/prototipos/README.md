@@ -1,19 +1,14 @@
 # Protótipos e Identidade Visual
 
-Esta pasta reúne a documentação relacionada aos protótipos e à identidade visual do projeto CentralBeer.
-
-## Objetivo
-
-Apresentar a proposta visual do sistema, incluindo elementos de identidade, organização das telas e definição inicial da interface que será utilizada no desenvolvimento.
+Esta pasta reúne os artefatos relacionados aos protótipos e à identidade visual do projeto CentralBeer.
 
 ## Conteúdo
 
-- identidade visual do CentralBeer;
-- definição de elementos visuais;
-- protótipos das principais telas do sistema;
-- organização inicial da interface;
-- referências utilizadas para o desenvolvimento visual.
+- identidade visual do sistema;
+- definição dos principais elementos visuais;
+- protótipos das telas;
+- organização inicial da interface.
 
-## Documento principal
+## Documento
 
-- `Prototipos e Identidade - CentralBeer.pdf`
+- [Protótipos e Identidade - CentralBeer](https://github.com/Bruno-Kowalski/Central-Beer/blob/main/docs/prototipos/Prototipos%20e%20Identidade%20-%20CentralBeer.pdf)
