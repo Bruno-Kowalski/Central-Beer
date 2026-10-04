@@ -1,15 +1,14 @@
 # Planejamento
 
-Esta pasta reúne os documentos de planejamento do projeto CentralBeer.
+Esta pasta reúne os artefatos de planejamento do projeto CentralBeer.
 
 ## Conteúdo
 
-- Planejamento da Fase 1 do projeto;
-- definição das atividades e entregas previstas;
-- organização inicial do desenvolvimento;
-- responsabilidades da equipe;
-- acompanhamento das etapas do projeto.
+- organização das etapas do projeto;
+- definição das atividades e entregas;
+- distribuição inicial das responsabilidades;
+- acompanhamento do desenvolvimento.
 
-## Documento principal
+## Documento
 
-- `Planejamento - CentralBeer.pdf`
+- [Planejamento - CentralBeer](https://github.com/Bruno-Kowalski/Central-Beer/blob/main/docs/planejamento/Planejamento%20-%20CentralBeer.pdf)
