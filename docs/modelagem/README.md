@@ -18,12 +18,12 @@ Esta pasta reúne os artefatos de modelagem do projeto CentralBeer.
 
 ## Casos de Uso
 
-Os artefatos de casos de uso do CentralBeer serão organizados na pasta:
-
-`docs/modelagem/casos-de-uso/`
+- [Casos de Uso - CentralBeer](https://github.com/Bruno-Kowalski/Central-Beer/blob/main/docs/modelagem/casos-de-uso/Casos%20de%20Uso%20-%20CentralBeer.pdf)
+- [Diagrama UML - Casos de Uso](https://github.com/Bruno-Kowalski/Central-Beer/blob/main/docs/modelagem/casos-de-uso/Diagrama%20UML%20-%20Casos%20de%20Uso.pdf)
+- [Arquivo editável do Diagrama UML - Casos de Uso](https://github.com/Bruno-Kowalski/Central-Beer/blob/main/docs/modelagem/casos-de-uso/Diagrama%20UML%20-%20Casos%20de%20Uso.drawio)
 
 ## Classes
 
-Os artefatos de modelagem de classes serão organizados na pasta:
-
-`docs/modelagem/classes/`
+- [Diagrama de Classes - CentralBeer](https://github.com/Bruno-Kowalski/Central-Beer/blob/main/docs/modelagem/classes/Diagrama%20de%20Classes%20-%20CentralBeer.pdf)
+- [Diagrama UML de Classes](https://github.com/Bruno-Kowalski/Central-Beer/blob/main/docs/modelagem/classes/Diagrama%20de%20Classes.pdf)
+- [Arquivo editável do Diagrama de Classes](https://github.com/Bruno-Kowalski/Central-Beer/blob/main/docs/modelagem/classes/Diagrama%20de%20Classes.drawio)
