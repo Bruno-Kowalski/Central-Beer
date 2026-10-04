@@ -1,17 +1,14 @@
 # Integração Externa
 
-Esta pasta reúne a documentação referente às integrações externas previstas para o projeto CentralBeer.
+Esta pasta reúne os artefatos relacionados às integrações externas do CentralBeer.
 
-## Objetivo
+## Conteúdo
 
-Documentar os serviços externos que poderão ser utilizados pelo sistema, descrevendo sua finalidade, forma de uso e relação com as funcionalidades do projeto.
+- definição das integrações previstas;
+- finalidade de cada serviço externo;
+- fluxo de comunicação com o sistema;
+- tratamento básico das informações recebidas.
 
-## Integração prevista
+## Documento
 
-O CentralBeer utilizará a API Open Food Facts para auxiliar na consulta de informações de produtos a partir do código de barras.
-
-Essa integração poderá apoiar o cadastro de produtos, permitindo consultar dados como nome, marca e outras informações disponíveis na base externa.
-
-## Documento principal
-
-- `Plano de Integracao Externa - CentralBeer.pdf`
+- [Plano de Integração Externa - CentralBeer](https://github.com/Bruno-Kowalski/Central-Beer/blob/main/docs/integracao/Plano%20de%20Integracao%20Externa%20-%20CentralBeer.pdf)
