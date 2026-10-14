@@ -467,7 +467,8 @@ Todos os integrantes atuarão como desenvolvedores e possuirão contribuições 
 | --- | --- | --- |
 | Bruno dos Santos | 22501077 | Produtos, estoque, integração externa e documentação |
 | Carlos Emanuel | 22509279 | Vendas, pagamentos, ponto de venda e interface |
-| Gustavo Augusto | 22507421 | Caixa, relatórios, workflows e publicação |
+| Gustavo Augusto | 22507421 | Caixa, workflows e publicação |
+| Marcelo Eduardo Silva e Santos Lopes | 22605017 | Relatórios, banco de dados e desenvolvimento back-end |
 
 Modelagem, revisão, segurança, testes e apresentação serão atividades compartilhadas entre os integrantes.
 
